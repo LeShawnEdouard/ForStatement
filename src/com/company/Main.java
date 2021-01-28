@@ -8,6 +8,10 @@ public class Main {
         for(int i=0; i<5; i++) {
             System.out.println("Loop " + i + " hello!");
         }
+
+        for(int i=2; i<9; i++) {
+            System.out.println(calculateInterest(10000.0, i));
+        }
     }
 
     public static double calculateInterest(double amount, double interestRate) {
