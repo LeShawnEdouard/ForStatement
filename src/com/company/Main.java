@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("10,000 at 2% interest = " + calculateInterest(10000.0, 2.0));
 
+        // for(int; condition; increment)
         for(int i=0; i<5; i++) {
             System.out.println("Loop " + i + " hello!");
         }
@@ -31,6 +32,21 @@ public class Main {
                 break;
             }
         }
+        System.out.println("***************************************");
+
+        int count2 = 0;
+        int sum = 0;
+        for(int i=1; i<=1000; i++) {
+            if((i % 3 == 0) && (i % 5 == 0)) {
+                count2++;
+                sum += i;
+                System.out.println("Number " + i + " is divisible by 3 & 5");
+            }
+            if(count2 == 5) {
+                break;
+            }
+        }
+        System.out.println("Sum = " + sum);
     }
 
     // Create a for statement using any range of numbers
