@@ -19,13 +19,25 @@ public class Main {
         for(int i=8; i>1; i--) {
             System.out.println(calculateInterest(10000.0, i));
         }
+
+
+        int count = 0;
+        for(int i=10; i<50; i++) {
+            if(isPrime(i)) {
+                count++;
+                System.out.println("Number " + i + " is a prime number");
+            }
+            if(count == 3) {
+                break;
+            }
+        }
     }
 
     // Create a for statement using any range of numbers
     // Determine if the number is a prime number using the isPrime method
     // If it is a prime number, print it out AND increment a count of the
     // number of prime numbers found
-    // if that count is 3 exit the for loop
+    // If that count is 3 exit the for loop
     // hint: Use the break; statement to exit
 
     public static boolean isPrime(int n) {
@@ -39,6 +51,7 @@ public class Main {
         }
         return true;
     }
+
 
     public static double calculateInterest(double amount, double interestRate) {
         return (amount * (interestRate/100));
