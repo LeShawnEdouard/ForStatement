@@ -59,15 +59,15 @@ public class Main {
 //            System.out.println("Count value is " + count3);
 //        }
 
-        count3 = 1;
-        do {
-            System.out.println("Count value was " + count3);
-            count3++;
-
-            if(count3 > 100) {
-                break;
-            }
-        } while(count3 !=6);
+//        count3 = 1;
+//        do {
+//            System.out.println("Count value was " + count3);
+//            count3++;
+//
+//            if(count3 > 100) {
+//                break;
+//            }
+//        } while(count3 !=6);
 
 //        while(true) {
 //            if(count3 == 6) {
@@ -77,6 +77,18 @@ public class Main {
 //            count3++;
 //        }
 
+    }
+    // Create a method called isEvenNumber that take a parameter of type int
+    // Its purpose is to determine if the argument passed to the method is
+    // an even number or not.
+    // Return true if an even number, otherwise return false;
+
+    public static boolean isEvenNumber(int number) {
+        if((number % 2) == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     // Create a for statement using any range of numbers
