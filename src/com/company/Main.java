@@ -47,6 +47,36 @@ public class Main {
             }
         }
         System.out.println("Sum = " + sum);
+        System.out.println("****************************");
+
+        int count3 = 6;
+//        while(count3 != 6) {
+//            System.out.println("Count value is " + count3);
+//            count3++;
+//        }
+//
+//        for(int i=6; i!=6; i++) {
+//            System.out.println("Count value is " + count3);
+//        }
+
+        count3 = 1;
+        do {
+            System.out.println("Count value was " + count3);
+            count3++;
+
+            if(count3 > 100) {
+                break;
+            }
+        } while(count3 !=6);
+
+//        while(true) {
+//            if(count3 == 6) {
+//                break;
+//            }
+//            System.out.println("Count value is " + count3);
+//            count3++;
+//        }
+
     }
 
     // Create a for statement using any range of numbers
